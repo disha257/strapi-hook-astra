@@ -1,0 +1,57 @@
+{
+  "name": "strapi-hook-astra",
+  "private": false,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@astrajs/collections": "^0.0.14",
+    "@octokit/rest": "^18.5.3",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "knex": "0.21.18",
+    "request": "^2.81.0",
+    "sqlite3": "5.0.0",
+    "strapi": "3.6.1",
+    "strapi-admin": "3.6.1",
+    "strapi-connector-bookshelf": "3.6.1",
+    "strapi-plugin-content-manager": "3.6.1",
+    "strapi-plugin-content-type-builder": "3.6.1",
+    "strapi-plugin-documentation": "^3.6.1",
+    "strapi-plugin-email": "3.6.1",
+    "strapi-plugin-graphql": "^3.6.1",
+    "strapi-plugin-i18n": "3.6.1",
+    "strapi-plugin-upload": "3.6.1",
+    "strapi-plugin-users-permissions": "3.6.1",
+    "strapi-utils": "3.6.1"
+  },
+  "author": "A Strapi Developer",
+  "strapi": {
+    "uuid": "4269c070-bbd0-43d6-b678-039984a77172"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disha257/strapi-hook-astra.git"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "hook"
+  ],
+  "bugs": {
+    "url": "https://github.com/disha257/astra-strapi-hook/issues"
+  },
+  "homepage": "https://github.com/disha257/astra-strapi-hook#readme"
+}
