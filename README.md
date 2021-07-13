@@ -4,7 +4,7 @@
 ## Activating the hook
 Add the following to `./config/hook.js`:
 
-`
+```js
 module.exports = {
     settings: {
         astra: {
@@ -15,7 +15,8 @@ module.exports = {
             collection: 'REPLACE_ME'
         },
     }
-};`
+};
+```
 
 ## Local Development
 
