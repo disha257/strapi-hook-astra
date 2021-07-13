@@ -15,7 +15,7 @@
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "knex": "0.21.18",
-    "request": "^2.81.0",
+    "request": "^2.88.2",
     "sqlite3": "5.0.0",
     "strapi": "3.6.1",
     "strapi-admin": "3.6.1",
@@ -45,7 +45,7 @@
     "url": "https://github.com/disha257/strapi-hook-astra.git"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "hook"
