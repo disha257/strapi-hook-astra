@@ -8,6 +8,7 @@ Add the following to `./config/hook.js`:
 module.exports = {
     settings: {
         astra: {
+            enabled: true,
             token: 'REPLACE_ME',
             databaseId: 'REPLACE_ME',
             databaseRegion: 'REPLACE_ME',
@@ -19,5 +20,5 @@ module.exports = {
 ```
 
 ## Local Development
-
-`npm install --save ../path/to/mymodule`
+1. Clone a sample Strapi project
+2. Install this plugin with: `npm install --save ../path/to/mymodule`
