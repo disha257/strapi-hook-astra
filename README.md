@@ -1,5 +1,9 @@
 # Strapi Hook Astra
 
+## Install
+```bash
+yarn add strapi-hook-astra
+```
 
 ## Activating the hook
 Add the following to `./config/hook.js`:

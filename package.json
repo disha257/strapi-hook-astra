@@ -1,5 +1,5 @@
 {
-  "name": "@disha257/strapi-hook-astra",
+  "name": "strapi-hook-astra",
   "private": false,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -8,6 +8,9 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
+  },
+  "directories": {
+    "lib": "lib"
   },
   "dependencies": {
     "@astrajs/collections": "^0.0.14",
@@ -32,14 +35,15 @@
   },
   "author": "A Strapi Developer",
   "strapi": {
-    "uuid": "4269c070-bbd0-43d6-b678-039984a77172"
+    "uuid": "4269c070-bbd0-43d6-b678-039984a77172",
+    "isHook": true
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
     "npm": "^6.0.0"
   },
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib",
   "repository": {
     "type": "git",
     "url": "https://github.com/disha257/strapi-hook-astra.git"
