@@ -1,7 +1,7 @@
 {
   "name": "strapi-hook-astra",
   "private": false,
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -55,7 +55,7 @@
     "hook"
   ],
   "bugs": {
-    "url": "https://github.com/disha257/astra-strapi-hook/issues"
+    "url": "https://github.com/disha257/strapi-hook-astra/issues"
   },
-  "homepage": "https://github.com/disha257/astra-strapi-hook#readme"
+  "homepage": "https://github.com/disha257/strapi-hook-astra#readme"
 }
