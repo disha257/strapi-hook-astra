@@ -1,12 +1,19 @@
 # Strapi Hook Astra
 
-## Install
+## Prerequisite 
+Install node [14.17.3 version](https://nodejs.org/en/)
+
+## Local Development
+Clone a sample Strapi Project :
 ```bash
-yarn add strapi-hook-astra
+npx create-strapi-app my-project
 ```
 
+## Install the hook
+Install this hook using: `npm i strapi-hook-astra`
+
 ## Activating the hook
-Add the following to `./config/hook.js`:
+Add the following to `./config/hook.js` of sample Strapi Project:
 
 ```js
 module.exports = {
@@ -23,6 +30,47 @@ module.exports = {
 };
 ```
 
-## Local Development
-1. Clone a sample Strapi project
-2. Install this plugin with: `npm install --save ../path/to/mymodule`
+- token: Generate a [token from Astra DB](https://docs.datastax.com/en/astra/docs/manage-application-tokens.html)
+
+- databaseId: Get your database ID from your database URL.
+
+- databaseRegion: Enter your database region from Astra DB.
+
+- keyspace: Enter your keyspace name.
+
+- collection: Enter collection name.
+
+## Usage
+The function will return response of the API call
+
+- Create document : 
+ 
+`strapi.services.astra.create(document);`
+
+| Parameter        | Type           | Explanation       | Values |
+| -----------------|:--------------:| -----------------:|-------:|
+| document         |json            | Create a document |var dataString = '{ "name": "John", "last_name": "Doe" }'|
+
+- Get document by Id : 
+
+`strapi.services.astra.getById(documentId);`
+
+
+| Parameter        | Type           | Explanation                | Values |
+| -----------------|:--------------:| --------------------------:|-------:|
+| documentId       |string          | Get document by documentId |var dId = "your_document_id"|
+
+- Get document by Path : 
+
+`strapi.services.astra.getByPath();`
+
+- Search Collection : 
+
+`strapi.services.astra.searchCollection(query, pagesize);`
+
+| Parameter        | Type           | Explanation                | Values |
+| -----------------|:--------------:| --------------------------:|-------:|
+| query            |string          | Search collection via query| var query = {"name": { "$eq": "John" }}|
+| pagesize         |int             | Number of documents to fetch| int page_size = 3 |
+
+
